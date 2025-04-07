@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Новая книга</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../mycss/main.css">
+    </head>
+    <body style="background-color: rgb(235,235,235)">
+        <div style="background-color: rgb(255,255,255)" class="container col-lg-6 col-md-6 rounded my-5 border shadow">
+            <h3 class="text-center mt-2 mb-4">Добавление книги</h3>
+            <div>
+                <form action="../php/new_book.php" method="POST" enctype="multipart/form-data">
+                    <label for="" class="">Обложка</label>
+                    <input type="file" class="col-12 my-2" name="photo" accept="image/png, image/jpeg" required>
+                    <label for="" class="">Цена</label>
+                    <input type="number" value="1" min="1" class="col-12 my-2" name="price" required>
+                    <label for="" class="">Название</label>
+                    <input type="text" class="col-12 my-2" name="title" required>
+                    <label for="" class="">Автор</label>
+                    <input type="text" class="col-12 my-2" name="author" required>
+                    <label for="" class="">Жанр</label>
+                    <input type="text" class="col-12 my-2" name="genre" required>
+                    <label for="" class="">Описание</label>
+                    <textarea class="col-12 my-2" name="descriptions" required></textarea>
+                    <div class="d-flex justify-content-between py-2">
+                        <a href="../index.php" class="btn bg-danger text-light">Назад</a>
+                        <button class="btn bg-success text-light" type="submit">Добавить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

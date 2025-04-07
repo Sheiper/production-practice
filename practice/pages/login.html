@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../mycss/main.css">
+    </head>
+    <body style="background-color: rgb(235,235,235)">
+        <div style="background-color: rgb(255,255,255)" class="container col-lg-6 col-md-6 rounded my-5 border shadow">
+            <h3 class="text-center mt-2 mb-4">Вход в Магазин книг</h3>
+            <div>
+                <form action="../php/log.php" method="POST">
+                    <label for="" class="">Почта</label>
+                    <input type="text" class="col-12 my-2" name="email" required>
+                    <label for="" class="">Пароль</label>
+                    <input type="password" class="col-12 my-2" name="password" required>
+                    <div class="d-flex justify-content-between py-2">
+                        <a href="../index.php" class="btn bg-danger text-light">Назад</a>
+                        <button class="btn bg-success text-light" type="submit">Войти</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
